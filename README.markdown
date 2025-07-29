@@ -716,7 +716,7 @@ before rendering, validating or saving:
             'method' => 'post',
         ));
 
-        $user = Doctrine::getTable('Default_Model_User')->find($userId);
+        $user = Doctrine_Core::getTable('Default_Model_User')->find($userId);
         $form->setRecord($user);
 
         if($this->getRequest()->isPost() && $form->isValid($_POST)) {

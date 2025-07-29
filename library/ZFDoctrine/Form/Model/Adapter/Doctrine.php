@@ -15,7 +15,7 @@ class ZFDoctrine_Form_Model_Adapter_Doctrine implements ZFDoctrine_Form_Model_Ad
     protected $_relations = null;
 
     public function setTable($table) {
-        $this->_table = Doctrine::getTable($table);
+        $this->_table = Doctrine_Core::getTable($table);
         $this->_model = $table;
     }
 
@@ -154,7 +154,7 @@ class ZFDoctrine_Form_Model_Adapter_Doctrine implements ZFDoctrine_Form_Model_Ad
     }
 
     public function getAllRecords($class) {
-        return Doctrine::getTable($class)->findAll();
+        return Doctrine_Core::getTable($class)->findAll();
     }
 
     public function deleteRecord($record) {

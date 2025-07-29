@@ -8,9 +8,9 @@ class ZFDoctrine_Form_Model_Adapter_DoctrineTest extends PHPUnit_Framework_TestC
         } else {
             Doctrine_Manager::connection('sqlite::memory:');
         }
-        Doctrine::loadModels(dirname(__FILE__) . '/_files/models');
+        Doctrine_Core::loadModels(dirname(__FILE__) . '/_files/models');
         try {
-            Doctrine::createTablesFromModels();
+            Doctrine_Core::createTablesFromModels();
         } catch(Doctrine_Export_Exception $e) {
             
         }

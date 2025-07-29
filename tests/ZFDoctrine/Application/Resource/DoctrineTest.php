@@ -132,7 +132,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -163,7 +163,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -198,7 +198,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -225,7 +225,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -252,7 +252,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -283,7 +283,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -318,7 +318,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -345,7 +345,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
             $resource->init();
 
             $manager = Doctrine_Manager::getInstance();
-            $cache = $manager->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $manager->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -668,7 +668,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -703,7 +703,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -742,7 +742,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -773,7 +773,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_QUERY_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_QUERY_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -804,7 +804,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -839,7 +839,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -878,7 +878,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
@@ -909,7 +909,7 @@ class ZFDoctrine_Application_Resource_DoctrineTest extends PHPUnit_Framework_Tes
 
             $manager = Doctrine_Manager::getInstance();
             $conn = $manager->getConnection('demo');
-            $cache = $conn->getAttribute(Doctrine::ATTR_RESULT_CACHE);
+            $cache = $conn->getAttribute(Doctrine_Core::ATTR_RESULT_CACHE);
 
             $this->assertThat(
                 $cache,
