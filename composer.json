@@ -1,0 +1,16 @@
+{
+    "name": "fcrespel/zf-doctrine",
+    "type": "library",
+    "description": "A Zend Framework 1.x and Doctrine 1.2 Integration",
+    "homepage": "https://github.com/fcrespel/zf-doctrine",
+    "require": {
+        "php": ">=5.2.3",
+        "zendframework/zendframework1": ">=1.10",
+        "doctrine/doctrine1": ">=1.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "ZFDoctrine_": "library/"
+        }
+    }
+}
