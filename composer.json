@@ -5,8 +5,16 @@
     "homepage": "https://github.com/fcrespel/zf-doctrine",
     "require": {
         "php": ">=5.2.3",
-        "zendframework/zendframework1": ">=1.10",
-        "doctrine/doctrine1": ">=1.2"
+        "friendsofsymfony1/doctrine1": "^1.4",
+        "zf1s/zend-application": "^1.15",
+        "zf1s/zend-controller": "^1.15",
+        "zf1s/zend-exception": "^1.15",
+        "zf1s/zend-filter": "^1.15",
+        "zf1s/zend-form": "^1.15",
+        "zf1s/zend-loader": "^1.15",
+        "zf1s/zend-paginator": "^1.15",
+        "zf1s/zend-tool": "^1.15",
+        "zf1s/zend-view": "^1.15"
     },
     "autoload": {
         "psr-0": {
